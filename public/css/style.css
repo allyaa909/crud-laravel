@@ -58,3 +58,18 @@ html, body {
    min-height: 100%;
  }
 
+ .ig:hover{
+     color: #c32aa3;
+ }
+
+.yt:hover{
+    color: rgb(255, 0, 0);
+}
+
+#jum {
+    background-image: url('../img/bg-jum.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    background-size: 100%;
+}

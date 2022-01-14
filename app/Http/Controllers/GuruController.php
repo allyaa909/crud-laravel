@@ -75,4 +75,11 @@ public function delete($id)
     $guru->delete();
     return redirect('/guru');
 }
+public function tampil($id){
+    $guru = guru::find($id);
+    return view('detail', [
+        "guru" => $guru 
+    ]);
+}
+
 }

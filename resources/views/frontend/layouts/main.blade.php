@@ -11,7 +11,6 @@
     <title>SMKN 11 BANDUNG</title>
   </head>
   <body>
-      @include('frontend.page.header')
       @include('frontend.page.navbar')
       
     

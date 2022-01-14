@@ -2,20 +2,20 @@
 @section('container')
     
     
-<a href="/guru/tambah" class="btn btn-primary float-right" style="margin-top: 100px;">Input Guru Baru</a>
     <div class="container">
         <div class="card" style="margin-bottom: 500px; margin-top: 100px;">
             <div class="card-body">
                 <table class="table">
                     <div class="text text-center">
-                        <p>Data Guru Smkn 11 Bandung</p>
+                      <p style="font-size: 25px; font-weight: bold; float : left;">Data Guru Smkn 11 Bandung</p>
+                        <a href="/guru/tambah" class="btn btn-primary float-right">Input Guru Baru</a>
                     </div>
                     <tr>
-                        <th>nip</th>
-                        <th>nama</th>
-                        <th>gelar</th>
-                        <th>mapel</th>
-                        <th>action</th>
+                        <th>Nip</th>
+                        <th>Nama</th>
+                        <th>Gelar</th>
+                        <th>Mapel</th>
+                        <th>Action</th>
                     </tr>
                    
                     @foreach ($guru as $g)
@@ -27,6 +27,7 @@
                             <td>
                                 <a href="/guru/edit/{{ $g->id }}" class="btn btn-warning">Edit</a> 
                                 <a href="/guru/hapus/{{ $g->id }}" class="btn btn-danger">Hapus</a>
+                                <a href="/guru/view/{{ $g->id }}" class="btn btn-info">View</a>
                             </td>        
                         </tr>
                     @endforeach

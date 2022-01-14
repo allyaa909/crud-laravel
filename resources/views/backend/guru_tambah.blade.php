@@ -24,12 +24,15 @@
 
                         <div class="form-group">
                             <label>NIP</label>
-                            <input type="text" name="nip" class="form-control" placeholder="NIP guru ...">
-                            @if($errors->has('nip'))
+                            <input type="text" name="nip" class="form-control @error('nip') border-danger @enderror" placeholder="NIP guru ...">
+                            {{-- @if($errors->has('nip'))
                                 <div class="text-danger">
                                     {{ $errors->first('nip')}}
                                 </div>
-                            @endif
+                            @endif --}}
+                            @error('nip')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
                         <div class="form-group">

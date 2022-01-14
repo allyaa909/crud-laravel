@@ -34,3 +34,4 @@ Route::post('/guru/simpan', [App\Http\Controllers\GuruController::class, 'simpan
 Route::get('/guru/edit/{guru}',[App\Http\Controllers\GuruController::class, 'edits']);
 Route::put('/guru/update/{id}', [App\Http\Controllers\GuruController::class, 'update']);
 Route::get('/guru/hapus/{id}', [App\Http\Controllers\GuruController::class, 'delete']);
+Route::get('/guru/view/{id}', [App\Http\Controllers\GuruController::class, 'tampil']);

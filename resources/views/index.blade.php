@@ -1,12 +1,11 @@
 @extends('frontend.layouts.main')
 
 @section('content')
-<div class="jumbotron jumbotron-fluid">
+
+<div class="jumbotron jumbotron-fluid" id="jum">
     <div class="container text-center">
-      <img src="img/logo.png" alt="smkn11bandung" width="25%" class="img-fluid">
     </div>
   </div>
-
   <div class="container">
       <div class="row mb-4">
           <div class="col text-center">

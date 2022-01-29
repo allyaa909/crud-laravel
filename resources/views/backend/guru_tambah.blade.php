@@ -19,7 +19,7 @@
                     <br/>
                     <br/>
                     
-                    <form method="post" action="/guru/simpan">
+                    <form method="post" action="/guru/simpan" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group">
@@ -63,13 +63,19 @@
                                 </div>
                             @endif
                         </div>
-                        
+                        <div class="mb-5">
+                            <label for="image" class="form-label">Upload Foto Anda
+                            </label>
+                            <input class="form-control" type="file" id="image" name="image[]" required multiple>
+                          </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" value="Simpan">
                         </div>
+                      
                     </form>
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

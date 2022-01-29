@@ -17,12 +17,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('index');
 });
 
 Route::get('/profil', function () {
     return view('profil');
+});
+
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/data', [App\Http\Controllers\GuruController::class, 'index']);
@@ -35,3 +39,9 @@ Route::get('/guru/edit/{guru}',[App\Http\Controllers\GuruController::class, 'edi
 Route::put('/guru/update/{id}', [App\Http\Controllers\GuruController::class, 'update']);
 Route::get('/guru/hapus/{id}', [App\Http\Controllers\GuruController::class, 'delete']);
 Route::get('/guru/view/{id}', [App\Http\Controllers\GuruController::class, 'tampil']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+
+
+// ->name('home')

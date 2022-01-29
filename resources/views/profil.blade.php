@@ -2,9 +2,10 @@
 
 @section('content')
     
+@yield('navbar2')
 
 <section id="profil">
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" style="margin-top: -100px;">
     <div class="container">
       <div class="row mt-5">
           <div class="col">

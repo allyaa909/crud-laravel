@@ -19,6 +19,7 @@ class CreateGuruTable extends Migration
             $table->string('nama');
             $table->string('gelar');
             $table->string('mapel');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
